@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Poppins, Source_Sans_3 } from "next/font/google";
+import { Geist, Geist_Mono, Poppins } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -8,12 +9,16 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
-const sourceSans = Source_Sans_3({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+const sourceSansPro = localFont({
+  src: [
+    {
+      path: "../../public/font/source-sans-pro.bold.ttf",
+      weight: "700",
+      style: "normal", // or "italic" depending on the file's nature
+    }
+  ],
   variable: "--font-source-sans",
 });
-
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -28,9 +33,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${poppins.variable} ${sourceSans.variable} h-full antialiased`}
+      className={`${poppins.variable} ${sourceSansPro.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
 }
+

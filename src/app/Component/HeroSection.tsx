@@ -28,12 +28,12 @@ export default function HeroSection() {
             Beyond Travel, Beyond Expectations
           </h1>
 
-          <p className="mt-6 font-body text-white/90 text-[16px] md:text-[18px] max-w-4xl mx-auto">
+          <p className="mt-4 md:mt-8 font-body text-white/90 text-[16px] md:text-[18px] max-w-4xl mx-auto">
             Discover Sri Lanka through tailor-made luxury journeys crafted
             around your passions, preferences, and sense of adventure.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-10">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-6 md:mt-10">
             <Button
               href="/tours"
               variant="primary"

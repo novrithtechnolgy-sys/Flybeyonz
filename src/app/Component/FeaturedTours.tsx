@@ -109,7 +109,7 @@ export default function FeaturedTours({
                 {tours.map((tour) => (
                   <SwiperSlide key={tour._id}>
                     <Link href={`/tours/${tour._id}`}>
-                      <div className="relative h-[540px] overflow-hidden group cursor-pointer">
+                      <div className="relative aspect-[5/9] overflow-hidden group cursor-pointer">
                         <Image
                           src={urlFor(tour.image)
                             .width(1200)

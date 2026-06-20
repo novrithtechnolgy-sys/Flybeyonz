@@ -10,21 +10,21 @@ export default function AboutIntro() {
             The Art of Luxury Travel in Sri Lanka
           </h2>
 
-          <p className="mt-8 font-body text-xl lg:text-[18px] leading-relaxed text-[#333] font-body max-w-3xl mx-auto">
+          <p className="mt-4 md:mt-8 font-body text-[16px] lg:text-[18px] leading-relaxed text-[#333] font-body max-w-3xl mx-auto">
             Sri Lanka is more than a destination – it's a collection of
             extraordinary experiences. From panoramic mountain views and
             ancient kingdoms to incredible wildlife and luxury retreats,
             every journey reveals something unforgettable.
           </p>
 
-          <p className="mt-8 font-body text-xl lg:text-[18px] leading-relaxed text-[#333] font-body max-w-3xl mx-auto">
+          <p className="mt-4 md:mt-8 font-body text-[16px] lg:text-[18px] leading-relaxed text-[#333] font-body max-w-3xl mx-auto">
             At Flybeyonz, we craft personalized travel experiences that
             blend luxury, authenticity, and exceptional service. Whether
             you seek adventure, relaxation, romance, or cultural discovery,
             we invite you to experience Sri Lanka beyond the ordinary.
           </p>
 
-          <div className="mt-14 flex justify-center">
+          <div className="mt-8 lg:mt-14 flex justify-center">
             <Button
               href="/about"
               variant="primary"

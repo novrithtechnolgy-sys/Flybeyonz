@@ -80,7 +80,7 @@ export default function WhyChooseUs({ cards }: Props) {
           >
             {cards.map((card) => (
               <SwiperSlide key={card._id}>
-                <div className="relative h-[520px] overflow-hidden group">
+                <div className="relative w-full aspect-[2/3] overflow-hidden group">
                   <Image
                     src={urlFor(card.image).width(1000).url()}
                     alt={card.title}
