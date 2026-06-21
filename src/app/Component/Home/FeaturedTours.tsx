@@ -56,22 +56,22 @@ export default function FeaturedTours({
               </span>
             </h2>
 
-            <p className="mt-8 font-body text-[18px] text-white/90 leading-relaxed">
+            <p className="mt-4 md:mt-8 font-body text-[16px] md:text-[18px] text-white/90 leading-relaxed">
               Browse our carefully crafted tour packages
               and discover the very best of Sri Lanka.
             </p>
-
-            <Button
-              href="/tours"
-              variant="outline"
-              className="mt-10"
-            >
-              View All Tours
-            </Button>
+            <div className="mt-10 hidden lg:block">
+              <Button
+                href="/tours"
+                variant="outline"
+              >
+                View All Tours
+              </Button>
+            </div>
           </div>
 
           {/* Right Carousel */}
-          <div className="lg:col-span-8">
+          <div className="hidden lg:block lg:col-span-8">
             <div className="relative">
               {/* Prev */}
               <button className="tour-prev absolute left-3 top-1/2 -translate-y-1/2 z-50 flex h-12 w-12 items-center justify-center rounded-full border border-white/60 bg-white/10 backdrop-blur-sm text-white hover:bg-white/20 transition">
@@ -97,6 +97,9 @@ export default function FeaturedTours({
                 spaceBetween={16}
                 slidesPerView={1}
                 breakpoints={{
+                  640: {
+                    slidesPerView: 1,
+                  },
                   768: {
                     slidesPerView: 2,
                   },
@@ -143,6 +146,55 @@ export default function FeaturedTours({
           </div>
         </div>
       </Container>
+        <div className="lg:hidden relative mt-8">  
+          <Swiper
+            modules={[Navigation]}
+            navigation={{
+              prevEl: ".why-prev",
+              nextEl: ".why-next",
+            }}
+            spaceBetween={12}
+            slidesPerView={1.1}
+            breakpoints={{
+              640: {
+                    slidesPerView: 1.25,
+                    spaceBetween: 16,
+              },
+              768: {
+                      slidesPerView: 2,
+                      spaceBetween: 16,
+                    },
+              }}
+            >
+              {tours.map((card, index) => (
+                <SwiperSlide key={card._id}
+                  className={index === 0 ? "pl-4" : index === tours.length - 1 ? "pr-4" : ""}>
+                    <div className="relative h-[430px] md:h-[520px] overflow-hidden group">
+                      <Image
+                        src={urlFor(card.image).width(1000).url()}
+                        alt={card.title}
+                        fill
+                        className="object-cover transition duration-700 group-hover:scale-110"
+                      />
+
+                      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+                          <div className="absolute bottom-0 left-0 p-5 md:p-8 text-white">
+                          <h3 className="mt-4 font-heading text-[20px] text-white/90 leading-relaxed">
+                            {card.title}
+                          </h3>
+                          <p className="mt-4 font-body text-[12px] text-white/90 leading-relaxed">
+                            {card.shortDescription}
+                          </p>
+                          <p className="mt-4 font-body text-[14px] font-semibold">
+                            {card.duration}
+                          </p>
+                          </div>
+                        </div>
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
+        </div>
+
     </section>
   );
 }
