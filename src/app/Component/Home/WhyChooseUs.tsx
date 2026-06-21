@@ -107,14 +107,13 @@ export default function WhyChooseUs({ cards }: Props) {
           </Swiper>
         </div>
       </Container>
-       <div className="md:hidden relative pl-4">
+       <div className="md:hidden relative">
           <Swiper
           modules={[Navigation]}
           navigation={{
             prevEl: ".why-prev",
             nextEl: ".why-next",
           }}
-          loop
           spaceBetween={12}
           slidesPerView={1.1}
           breakpoints={{
@@ -136,8 +135,9 @@ export default function WhyChooseUs({ cards }: Props) {
             },
           }}
         >
-          {cards.map((card) => (
-            <SwiperSlide key={card._id}>
+          {cards.map((card, index) => (
+            <SwiperSlide key={card._id}
+            className={index === 0 ? "pl-4 md:pl-0" : ""}>
               <div className="relative h-[430px] md:h-[520px] overflow-hidden group">
                 <Image
                   src={urlFor(card.image).width(1000).url()}
