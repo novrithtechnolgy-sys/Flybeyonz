@@ -28,30 +28,30 @@ export default function Testimonials({
   testimonials,
 }: Props) {
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white py-10 md:py-20">
       <Container>
         {/* Title */}
-        <div className="text-center mb-16">
-          <h2 className="font-heading text-4xl lg:text-[38px] italic text-gray-800">
+        <div className="text-center mb-8 md:mb-16">
+          <h2 className="font-heading text-[28px] lg:text-[38px] italic text-gray-800">
             Trusted by
           </h2>
 
-          <h2 className="font-heading text-4xl lg:text-[38px] font-bold italic mt-2 text-gray-800">
+          <h2 className="font-heading text-[28px] lg:text-[38px] font-bold italic mt-2 text-gray-800">
             Travelers Worldwide
           </h2>
         </div>
 
         <div className="relative">
           {/* Prev */}
-          <button className="testimonial-prev absolute left-0 top-1/2 -translate-y-1/2 z-20 flex h-12 w-12 items-center justify-center rounded-full bg-gray-500 text-white">
+          <button className="hidden testimonial-prev absolute left-0 top-1/2 -translate-y-1/2 z-20 flex h-12 w-12 items-center justify-center rounded-full bg-gray-500 text-white">
             <ChevronLeft />
           </button>
 
           {/* Next */}
-          <button className="testimonial-next absolute right-0 top-1/2 -translate-y-1/2 z-20 flex h-12 w-12 items-center justify-center rounded-full bg-gray-500 text-white">
+          <button className="hidden testimonial-next absolute right-0 top-1/2 -translate-y-1/2 z-20 flex h-12 w-12 items-center justify-center rounded-full bg-gray-500 text-white">
             <ChevronRight />
           </button>
-        <div className="relative px-16">
+        <div className="relative md:px-16">
           <Swiper
             modules={[Navigation, Autoplay]}
             navigation={{

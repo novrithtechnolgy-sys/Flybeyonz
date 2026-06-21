@@ -17,13 +17,13 @@ export default function StayExtraordinary({
   categories,
 }: Props) {
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white py-10 md:py-20">
       <Container>
         {/* Header */}
-        <div className="grid lg:grid-cols-12 gap-8 items-center mb-16">
+        <div className="grid lg:grid-cols-12 gap-4 md:gap-8 items-center mb-8 md:mb-16">
           {/* Left */}
           <div className="lg:col-span-4">
-            <h2 className="font-heading text-4xl lg:text-[38px] font-semibold italic text-gray-900 leading-tight">
+            <h2 className="font-heading text-[28px] lg:text-[38px] text-center md:text-left font-semibold italic text-gray-900 leading-tight">
               Stay Somewhere
               <br />
               <span className="font-bold">
@@ -33,15 +33,15 @@ export default function StayExtraordinary({
           </div>
 
           {/* Center */}
-          <div className="lg:col-span-5">
-            <p className="font-body text-[18px] leading-10 text-gray-700">
+          <div className="lg:col-span-5 text-center md:text-left">
+            <p className="font-body text-[16px] md:text-[18px] md:leading-10 text-gray-700">
               Experience exceptional stays at handpicked
               luxury properties across Sri Lanka.
             </p>
           </div>
 
           {/* Right */}
-          <div className="lg:col-span-3 flex lg:justify-end">
+          <div className="hidden md:block lg:col-span-3 flex lg:justify-end">
             <Button href="/accommodation" variant="primary">
               Discover All
             </Button>
@@ -53,7 +53,7 @@ export default function StayExtraordinary({
           {categories.map((item) => (
             <div
               key={item._id}
-              className="relative aspect-[5/9] overflow-hidden group"
+              className="relative h-[200px] md:h-auto md:aspect-[5/9] overflow-hidden group"
             >
               <Image
                 src={urlFor(item.image).width(1000).url()}
