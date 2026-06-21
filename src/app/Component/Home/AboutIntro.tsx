@@ -1,13 +1,17 @@
-import Button from "./ui/Button";
-import Container from "./ui/Container";
+import Button from "../ui/Button";
+import Container from "../ui/Container";
 
 export default function AboutIntro() {
   return (
-    <section className="bg-[#f5f5f5] py-10 lg:py-20">
+    <section className="bg-white py-10 lg:py-20">
       <Container>
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-heading text-[32px] lg:text-[38px] font-semibold italic text-black">
-            The Art of Luxury Travel in Sri Lanka
+          <h2 className="font-heading text-[28px] lg:text-[38px] font-semibold italic text-black">
+            The Art of 
+            <br />
+            <span className="font-bold">
+            Luxury Travel in Sri Lanka
+            </span>
           </h2>
 
           <p className="mt-4 md:mt-8 font-body text-[16px] lg:text-[18px] leading-relaxed text-[#333] font-body max-w-3xl mx-auto">

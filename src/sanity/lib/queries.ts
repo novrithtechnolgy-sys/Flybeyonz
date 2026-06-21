@@ -54,3 +54,16 @@ export const accommodationCategoriesQuery = groq`
   image
 }
 `;
+
+export const testimonialsQuery = `
+*[_type == "testimonial"]
+| order(order asc)
+{
+  _id,
+  name,
+  country,
+  review,
+  rating,
+  photo
+}
+`;

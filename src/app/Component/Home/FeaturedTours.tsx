@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import Container from "./ui/Container";
-import Button from "./ui/Button";
+import Container from "../ui/Container";
+import Button from "../ui/Button";
 import { urlFor } from "@/sanity/lib/image";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -126,7 +126,7 @@ export default function FeaturedTours({
                             {tour.title}
                           </h3>
 
-                          <p className="mt-4 font-body text-[18px] text-white/90 leading-relaxed">
+                          <p className="mt-4 font-body text-[14px] text-white/90 leading-relaxed">
                             {tour.shortDescription}
                           </p>
 

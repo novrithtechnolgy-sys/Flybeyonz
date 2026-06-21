@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Container from "./ui/Container";
+import Container from "../ui/Container";
 import { urlFor } from "@/sanity/lib/image";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -27,7 +27,7 @@ export default function DestinationSection({
   destinations,
 }: Props) {
   return (
-    <section className="bg-[#f5f5f5] py-20">
+    <section className="bg-white py-20">
       <Container>
         {/* Title */}
         <div className="text-center mb-16">
@@ -77,7 +77,7 @@ export default function DestinationSection({
         >
           {destinations.map((item) => (
             <SwiperSlide key={item._id}>
-              <div className="relative h-[440px] group overflow-hidden">
+              <div className="relative aspect-[3/3] group overflow-hidden">
                 <Image
                   src={urlFor(item.image).width(1600).url()}
                   alt={item.title}
@@ -92,7 +92,7 @@ export default function DestinationSection({
                     {item.title}
                   </h3>
 
-                  <p className="font-body text-lg text-white/90 max-w-md">
+                  <p className="font-body text-[14px] text-white/90 max-w-md">
                     {item.description}
                   </p>
                 </div>

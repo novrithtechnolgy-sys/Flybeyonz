@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Container from "./ui/Container";
-import Button from "./ui/Button";
+import Container from "../ui/Container";
+import Button from "../ui/Button";
 import { urlFor } from "@/sanity/lib/image";
 
 type AccommodationCategory = {
@@ -17,16 +17,18 @@ export default function StayExtraordinary({
   categories,
 }: Props) {
   return (
-    <section className="bg-[#f5f5f5] py-20">
+    <section className="bg-white py-20">
       <Container>
         {/* Header */}
         <div className="grid lg:grid-cols-12 gap-8 items-center mb-16">
           {/* Left */}
           <div className="lg:col-span-4">
-            <h2 className="font-heading text-4xl lg:text-[38px] font-bold italic text-gray-900 leading-tight">
+            <h2 className="font-heading text-4xl lg:text-[38px] font-semibold italic text-gray-900 leading-tight">
               Stay Somewhere
               <br />
+              <span className="font-bold">
               Extraordinary
+              </span>
             </h2>
           </div>
 
@@ -51,7 +53,7 @@ export default function StayExtraordinary({
           {categories.map((item) => (
             <div
               key={item._id}
-              className="relative h-[440px] overflow-hidden group"
+              className="relative aspect-[5/9] overflow-hidden group"
             >
               <Image
                 src={urlFor(item.image).width(1000).url()}

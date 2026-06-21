@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
+import Footer from "./Component/Footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -14,8 +15,13 @@ const sourceSansPro = localFont({
     {
       path: "../../public/font/source-sans-pro.bold.ttf",
       weight: "700",
-      style: "normal", // or "italic" depending on the file's nature
-    }
+      style: "bold", // or "italic" depending on the file's nature
+    },
+    {
+      path: "../../public/font/source-sans-pro.semibold.ttf",
+      weight: "600",
+      style: "semibold", // or "italic" depending on the file's nature
+    },
   ],
   variable: "--font-source-sans",
 });
@@ -36,6 +42,7 @@ export default function RootLayout({
       className={`${poppins.variable} ${sourceSansPro.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
+      <Footer />
     </html>
   );
 }

@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Container from "./ui/Container";
-import Button from "./ui/Button";
+import Container from "../ui/Container";
+import Button from "../ui/Button";
 import { urlFor } from "@/sanity/lib/image";
 
 type Experience = {
@@ -18,7 +18,7 @@ export default function ExperiencesSection({
   experiences,
 }: Props) {
   return (
-    <section className="bg-[#f5f5f5] py-20">
+    <section className="bg-white py-20">
       <Container>
         {/* Title */}
         <div className="text-center mb-16">
@@ -36,7 +36,7 @@ export default function ExperiencesSection({
           {experiences.map((item) => (
             <div
               key={item._id}
-              className="relative h-[430px] overflow-hidden group"
+              className="relative aspect-[7/8] overflow-hidden group"
             >
               <Image
                 src={urlFor(item.image).width(1200).url()}
@@ -52,7 +52,7 @@ export default function ExperiencesSection({
                   {item.title}
                 </h3>
 
-                <p className="font-body text-[18px] leading-8 text-white/90">
+                <p className="font-body text-[14px] leading-8 text-white/90">
                   {item.description}
                 </p>
               </div>
