@@ -30,7 +30,7 @@ export default function FeaturedTours({
   tours,
 }: Props) {
   return (
-    <section className="relative overflow-hidden py-20">
+    <section className="relative overflow-hidden py-10 md:py-20">
       {/* Background */}
       <Image
         src="https://res.cloudinary.com/dvgodnxlg/image/upload/q_auto/f_auto/v1781702721/95a89087dad198f19ede4ebace08169c71b62b78_iwvel1.webp"
@@ -48,7 +48,7 @@ export default function FeaturedTours({
         <div className="grid lg:grid-cols-12 gap-10 items-center">
           {/* Left Content */}
           <div className="lg:col-span-4 text-white">
-            <h2 className="font-heading text-5xl lg:text-[38px] italic font-semibold leading-tight">
+            <h2 className="font-heading text-[28px] lg:text-[38px] italic font-semibold leading-tight">
               Signature
               <br />
               <span className="font-bold ">
