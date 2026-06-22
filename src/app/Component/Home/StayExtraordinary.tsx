@@ -72,6 +72,11 @@ export default function StayExtraordinary({
             </div>
           ))}
         </div>
+        <div className="md:hidden flex justify-center mt-8">
+            <Button href="/accommodation" variant="primary">
+              Discover All
+            </Button>
+          </div>
       </Container>
     </section>
   );
