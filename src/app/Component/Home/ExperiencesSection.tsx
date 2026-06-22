@@ -6,6 +6,9 @@ import { urlFor } from "@/sanity/lib/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 
+import { useState, useRef } from "react";
+import type { Swiper as SwiperType } from "swiper";
+
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -23,6 +26,9 @@ interface Props {
 export default function ExperiencesSection({
   experiences,
 }: Props) {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const swiperRef = useRef<SwiperType | null>(null);
+
   return (
     <section className="bg-white py-10 md:py-20">
       <Container>
@@ -69,14 +75,19 @@ export default function ExperiencesSection({
           <div className="md:hidden">
             <Swiper
               modules={[Pagination]}
-              pagination={{ clickable: true }}
+                onSwiper={(swiper) => {
+                swiperRef.current = swiper;
+              }}
+              onSlideChange={(swiper) => {
+                setActiveIndex(swiper.activeIndex);
+              }}
               spaceBetween={16}
               slidesPerView={1}
               className="experience-slider"
             >
               {experiences.map((item) => (
                 <SwiperSlide key={item._id}>
-                  <div className="relative h-[500px] overflow-hidden">
+                  <div className="relative h-[400px] overflow-hidden">
                     <Image
                       src={urlFor(item.image).width(1200).url()}
                       alt={item.title}
@@ -99,9 +110,22 @@ export default function ExperiencesSection({
                 </SwiperSlide>
               ))}
             </Swiper>
+            <div className="md:hidden flex justify-center gap-2 mt-6">
+              {experiences.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => {}}
+                  className={`h-2 w-2 rounded-full transition-all ${
+                    activeIndex === index
+                      ? "bg-[#08295D]"
+                      : "bg-gray-300"
+                  }`}
+                />
+              ))}
+            </div>
           </div>
         {/* Button */}
-        <div className="flex justify-center mt-14">
+        <div className="flex justify-center mt-8 md:mt-16">
           <Button href="/experiences" variant="primary">
             Explore More
           </Button>

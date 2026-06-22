@@ -9,6 +9,9 @@ import { Navigation, Autoplay } from "swiper/modules";
 
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
+import { useState, useRef } from "react";
+import type { Swiper as SwiperType } from "swiper";
+
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -26,6 +29,8 @@ interface Props {
 export default function DestinationSection({
   destinations,
 }: Props) {
+    const [activeIndex, setActiveIndex] = useState(0);
+    const swiperRef = useRef<SwiperType | null>(null);
   return (
     <section className="bg-white py-10 md:py-20">
       <Container>
@@ -58,6 +63,12 @@ export default function DestinationSection({
             prevEl: ".destination-prev",
             nextEl: ".destination-next",
           }}
+           onSwiper={(swiper) => {
+            swiperRef.current = swiper;
+              }}
+            onSlideChange={(swiper) => {
+              setActiveIndex(swiper.activeIndex);
+            }}
           autoplay={{
             delay: 5000,
             disableOnInteraction: false,
@@ -100,6 +111,19 @@ export default function DestinationSection({
             </SwiperSlide>
           ))}
         </Swiper>
+        <div className="md:hidden flex justify-center gap-2 mt-6">
+          {destinations.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => {}}
+              className={`h-2 w-2 rounded-full transition-all ${
+                activeIndex === index
+                  ? "bg-[#08295D]"
+                  : "bg-gray-300"
+              }`}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

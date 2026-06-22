@@ -3,6 +3,9 @@
 import Image from "next/image";
 import { urlFor } from "@/sanity/lib/image";
 
+import { useState, useRef } from "react";
+import type { Swiper as SwiperType } from "swiper";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 
@@ -27,6 +30,10 @@ interface Props {
 export default function Testimonials({
   testimonials,
 }: Props) {
+
+  const [activeIndex, setActiveIndex] = useState(0);
+  const swiperRef = useRef<SwiperType | null>(null);  
+
   return (
     <section className="bg-white py-10 md:py-20">
       <Container>
@@ -62,7 +69,13 @@ export default function Testimonials({
             //   delay: 5000,
             //   disableOnInteraction: false,
             // }}
-            loop
+            onSwiper={(swiper) => {
+                swiperRef.current = swiper;
+              }}
+              onSlideChange={(swiper) => {
+                setActiveIndex(swiper.activeIndex);
+              }}
+            // loop
             spaceBetween={16}
             breakpoints={{
               0: {
@@ -119,6 +132,19 @@ export default function Testimonials({
               </SwiperSlide>
             ))}
           </Swiper>
+          <div className="md:hidden flex justify-center gap-2 mt-6">
+          {testimonials.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => {}}
+              className={`h-2 w-2 rounded-full transition-all ${
+                activeIndex === index
+                  ? "bg-[#08295D]"
+                  : "bg-gray-300"
+              }`}
+            />
+          ))}
+        </div>
         </div>
         </div>
       </Container>
