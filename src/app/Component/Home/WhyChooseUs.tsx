@@ -1,5 +1,8 @@
 "use client";
 
+import { useState, useRef } from "react";
+import type { Swiper as SwiperType } from "swiper";
+
 import Image from "next/image";
 import Container from "../ui/Container";
 import { urlFor } from "@/sanity/lib/image";
@@ -24,6 +27,8 @@ interface Props {
 }
 
 export default function WhyChooseUs({ cards }: Props) {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const swiperRef = useRef<SwiperType | null>(null);
   return (
     <section className="bg-white py-10 md:py-20">
       <Container>
@@ -110,10 +115,16 @@ export default function WhyChooseUs({ cards }: Props) {
        <div className="md:hidden relative">
           <Swiper
           modules={[Navigation]}
-          navigation={{
-            prevEl: ".why-prev",
-            nextEl: ".why-next",
-          }}
+          // navigation={{
+          //   prevEl: ".why-prev",
+          //   nextEl: ".why-next",
+          // }}
+              onSwiper={(swiper) => {
+                swiperRef.current = swiper;
+              }}
+              onSlideChange={(swiper) => {
+                setActiveIndex(swiper.activeIndex);
+              }}
           spaceBetween={12}
           slidesPerView={1.1}
           breakpoints={{
@@ -149,11 +160,11 @@ export default function WhyChooseUs({ cards }: Props) {
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
 
                 <div className="absolute bottom-0 left-0 p-5 md:p-8 text-white">
-                  <h3 className="font-heading text-[18px] md:text-[22px] font-semibold uppercase mb-3">
+                  <h3 className="font-heading text-[18px] md:text-[22px] font-semibold uppercase mb-4 ">
                     {card.title}
                   </h3>
 
-                  <p className="font-body text-[15px] md:text-[16px] leading-8 text-white/90">
+                  <p className="font-body text-[12px] md:text-[16px] leading-6 text-white/90">
                     {card.description}
                   </p>
                 </div>
@@ -161,6 +172,19 @@ export default function WhyChooseUs({ cards }: Props) {
             </SwiperSlide>
           ))}
         </Swiper>
+        <div className="md:hidden flex justify-center gap-2 mt-6">
+          {cards.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => {}}
+              className={`h-2 w-2 rounded-full transition-all ${
+                activeIndex === index
+                  ? "bg-[#08295D]"
+                  : "bg-gray-300"
+              }`}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

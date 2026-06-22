@@ -5,7 +5,8 @@ import Link from "next/link";
 import Container from "../ui/Container";
 import Button from "../ui/Button";
 import { urlFor } from "@/sanity/lib/image";
-
+import type { Swiper as SwiperType } from "swiper";
+import { useState, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 
@@ -29,6 +30,8 @@ interface Props {
 export default function FeaturedTours({
   tours,
 }: Props) {
+    const [activeIndex, setActiveIndex] = useState(0);
+    const swiperRef = useRef<SwiperType | null>(null);
   return (
     <section className="relative overflow-hidden py-10 md:py-20">
       {/* Background */}
@@ -149,10 +152,16 @@ export default function FeaturedTours({
         <div className="lg:hidden relative mt-8">  
           <Swiper
             modules={[Navigation]}
-            navigation={{
-              prevEl: ".why-prev",
-              nextEl: ".why-next",
-            }}
+            // navigation={{
+            //   prevEl: ".why-prev",
+            //   nextEl: ".why-next",
+            // }}
+            onSwiper={(swiper) => {
+                swiperRef.current = swiper;
+              }}
+              onSlideChange={(swiper) => {
+                setActiveIndex(swiper.activeIndex);
+              }}
             spaceBetween={12}
             slidesPerView={1.1}
             breakpoints={{
@@ -177,7 +186,7 @@ export default function FeaturedTours({
                         className="object-cover transition duration-700 group-hover:scale-110"
                       />
 
-                      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+                      <div className="absolute -bottom-1 inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
                           <div className="absolute bottom-0 left-0 p-5 md:p-8 text-white">
                           <h3 className="mt-4 font-heading text-[20px] text-white/90 leading-relaxed">
                             {card.title}
@@ -193,8 +202,28 @@ export default function FeaturedTours({
                       </SwiperSlide>
                     ))}
                   </Swiper>
-        </div>
-
+                  <div className="md:hidden flex justify-center gap-2 mt-6">
+                    {tours.map((_, index) => (
+                      <button
+                        key={index}
+                        onClick={() => {}}
+                        className={`h-2 w-2 rounded-full transition-all ${
+                          activeIndex === index
+                            ? "bg-[#08295D]"
+                            : "bg-gray-400"
+                        }`}
+                      />
+                    ))}
+                  </div>
+               </div>
+              <div className="relative flex items-center justify-center mt-10 md:hidden z-90">
+              <Button
+                href="/tours"
+                variant="outline"
+              >
+                View All Tours
+              </Button>
+            </div>
     </section>
   );
 }
