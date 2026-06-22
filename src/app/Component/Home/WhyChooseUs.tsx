@@ -126,7 +126,7 @@ export default function WhyChooseUs({ cards }: Props) {
                 setActiveIndex(swiper.activeIndex);
               }}
           spaceBetween={12}
-          slidesPerView={1.1}
+          slidesPerView={1.25}
           breakpoints={{
             640: {
               slidesPerView: 1.25,

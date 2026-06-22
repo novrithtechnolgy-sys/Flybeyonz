@@ -163,7 +163,7 @@ export default function FeaturedTours({
                 setActiveIndex(swiper.activeIndex);
               }}
             spaceBetween={12}
-            slidesPerView={1.1}
+            slidesPerView={1.25}
             breakpoints={{
               640: {
                     slidesPerView: 1.25,
@@ -178,7 +178,7 @@ export default function FeaturedTours({
               {tours.map((card, index) => (
                 <SwiperSlide key={card._id}
                   className={index === 0 ? "pl-4" : index === tours.length - 1 ? "pr-4" : ""}>
-                    <div className="relative h-[430px] md:h-[520px] overflow-hidden group">
+                    <div className="relative h-[380px] md:h-[520px] overflow-hidden group">
                       <Image
                         src={urlFor(card.image).width(1000).url()}
                         alt={card.title}
