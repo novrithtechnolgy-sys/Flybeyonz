@@ -29,8 +29,8 @@ export default function Footer() {
       <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent" />
 
       <Container className="relative z-10">
-        <div className="pt-20">
-          <div className="grid lg:grid-cols-12 gap-12">
+        <div className="pt-10 md:pt-20">
+          <div className="grid lg:grid-cols-12 gap-8 md:gap-12 font-body text-[14px] md:text-[16px]">
             {/* Company Info */}
             <div className="lg:col-span-5">
               <Image
@@ -38,16 +38,16 @@ export default function Footer() {
                 alt="Flybeyonz"
                 width={260}
                 height={80}
-                className="mb-10 h-auto w-[120px] lg:w-[220px]"
+                className="mb-4 md:mb-8 h-auto w-[180px] lg:w-[220px]"
               />
 
-              <div className="space-y-8">
+              <div className="space-y-4 md:space-y-8">
                 <div>
-                  <h4 className="font-semibold mb-2">
+                  <h4 className="font-semibold md:mb-2">
                     Address
                   </h4>
 
-                  <p className="text-white/90 leading-9">
+                  <p className="text-white/90 md:leading-9">
                     No. 123, Nawan Mawatha,
                     <br />
                     Colombo, Sri Lanka
@@ -55,7 +55,7 @@ export default function Footer() {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold mb-2">
+                  <h4 className="font-semibold md:mb-2">
                     Hotline
                   </h4>
 
@@ -65,7 +65,7 @@ export default function Footer() {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold mb-2">
+                  <h4 className="font-semibold md:mb-2">
                     Email
                   </h4>
 
@@ -96,11 +96,11 @@ export default function Footer() {
 
             {/* Quick Links */}
             <div className="lg:col-span-2">
-              <h3 className="font-semibold mb-8">
+              <h3 className="font-semibold mb-4 md:mb-8">
                 Quick Links
               </h3>
 
-              <ul className="space-y-4">
+              <ul className="space-y-2 md:space-y-4">
                 <li>
                   <Link href="/">Home</Link>
                 </li>
@@ -133,11 +133,11 @@ export default function Footer() {
 
             {/* Services */}
             <div className="lg:col-span-3">
-              <h3 className="font-semibold mb-8">
+              <h3 className="font-semibold mb-4 md:mb-8">
                 Our Services
               </h3>
 
-              <ul className="space-y-4">
+              <ul className="space-y-2 md:space-y-4">
                 <li>Hotel & Accommodation</li>
                 <li>Transport Service</li>
                 <li>Custom Tour Packages</li>
@@ -149,11 +149,11 @@ export default function Footer() {
 
             {/* Policies */}
             <div className="lg:col-span-2">
-              <h3 className="font-semibold mb-8">
+              <h3 className="font-semibold mb-4 md:mb-8">
                 Help & Support
               </h3>
 
-              <ul className="space-y-4">
+              <ul className="space-y-2 md:space-y-4">
                 <li>
                   <Link href="/privacy-policy">
                     Privacy Policy
@@ -182,13 +182,13 @@ export default function Footer() {
           </div>
 
           {/* Bottom Bar */}
-          <div className="mt-16 border-t border-white/20 pt-6 pb-8 flex flex-col lg:flex-row justify-between items-center gap-4">
-            <p className="text-white/80">
+          <div className="mt-8 md:mt-16 border-t border-white/20 pt-6 pb-4 md:pb-8 flex flex-col lg:flex-row justify-between items-center gap-2 md:gap-4 font-body text-[14px] md:text-[16px]">
+            <p className="text-white/80 text-center md:text-left">
               © 2026 Flybeyonz Travels & Tours.
               All Rights Reserved.
             </p>
 
-            <div className="flex items-center gap-6">
+            <div className="flex items-center gap-6 text-center md:text-right">
               <p className="text-white/80">
                 Developed by{" "}
                 <span className="font-semibold text-white">
@@ -203,7 +203,7 @@ export default function Footer() {
                     behavior: "smooth",
                   })
                 }
-                className="h-8 w-8 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-black transition"
+                className="hidden md:block h-8 w-8 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-black transition"
               >
                 <ChevronUp size={18} />
               </button>

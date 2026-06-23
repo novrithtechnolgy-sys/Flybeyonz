@@ -91,9 +91,9 @@ export default function Testimonials({
           >
             {testimonials.map((item) => (
               <SwiperSlide key={item._id}>
-                <div className="bg-[#EDEDED] p-8 min-h-[300px] md:min-h-[380px]">
+                <div className="bg-[#EDEDED] p-4 md:p-8 min-h-[250px] md:min-h-[380px]">
                   {/* Stars */}
-                  <div className="flex gap-1 mb-6">
+                  <div className="flex gap-1 mb-4 md:mb-6">
                     {[...Array(item.rating)].map((_, i) => (
                       <Star
                         key={i}
@@ -109,21 +109,21 @@ export default function Testimonials({
                   </p>
 
                   {/* Guest */}
-                  <div className="flex items-center gap-4 mt-6">
+                  <div className="flex items-center gap-4 mt-4 md:mt-6">
                     <Image
                       src={urlFor(item.photo).width(80).url()}
                       alt={item.name}
                       width={55}
                       height={55}
-                      className="rounded-full object-cover h-10 w-10"
+                      className="rounded-full object-cover h-8 w-8 md:h-10 md:w-10"
                     />
 
                     <div>
-                      <h4 className="font-body font-semibold text-[#2B2E83] text-[18px]">
+                      <h4 className="font-body font-semibold text-[#2B2E83] text-[16px] md:text-[18px]">
                         {item.name}
                       </h4>
 
-                      <p className="font-body text-gray-500 text-[14px]">
+                      <p className="font-body text-gray-500 text-[12px] md:text-[14px]">
                         {item.country}
                       </p>
                     </div>

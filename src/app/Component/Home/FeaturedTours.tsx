@@ -177,7 +177,7 @@ export default function FeaturedTours({
             >
               {tours.map((card, index) => (
                 <SwiperSlide key={card._id}
-                  className={index === 0 ? "pl-4" : index === tours.length - 1 ? "pr-4" : ""}>
+                  className={index === 0 ? "pl-[16px]" : index === tours.length - 1 ? "pr-[16px]" : ""}>
                     <div className="relative h-[380px] md:h-[520px] overflow-hidden group">
                       <Image
                         src={urlFor(card.image).width(1000).url()}
@@ -187,14 +187,14 @@ export default function FeaturedTours({
                       />
 
                       <div className="absolute -bottom-1 inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
-                          <div className="absolute bottom-0 left-0 p-5 md:p-8 text-white">
+                          <div className="absolute bottom-0 left-0 p-4 md:p-8 text-white">
                           <h3 className="mt-4 font-heading text-[20px] text-white/90 leading-relaxed">
                             {card.title}
                           </h3>
-                          <p className="mt-4 font-body text-[12px] text-white/90 leading-relaxed">
+                          <p className="mt-2 font-body text-[12px] text-white/90 leading-relaxed">
                             {card.shortDescription}
                           </p>
-                          <p className="mt-4 font-body text-[14px] font-semibold">
+                          <p className="mt-2 font-body text-[14px] font-semibold">
                             {card.duration}
                           </p>
                           </div>
@@ -202,7 +202,7 @@ export default function FeaturedTours({
                       </SwiperSlide>
                     ))}
                   </Swiper>
-                  <div className="md:hidden flex justify-center gap-2 mt-6">
+                  <div className="md:hidden flex justify-center gap-2 mt-8">
                     {tours.map((_, index) => (
                       <button
                         key={index}
@@ -216,7 +216,7 @@ export default function FeaturedTours({
                     ))}
                   </div>
                </div>
-              <div className="relative flex items-center justify-center mt-10 md:hidden z-90">
+              <div className="relative flex items-center justify-center mt-8 md:hidden z-90">
               <Button
                 href="/tours"
                 variant="outline"

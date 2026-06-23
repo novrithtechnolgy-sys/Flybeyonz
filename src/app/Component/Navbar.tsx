@@ -54,17 +54,17 @@ export default function Navbar() {
                 : "max-h-20 opacity-100 py-4 border-b border-white/20"
             }`}
           >
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 font-body">
               <Mail size={14} />
               <span>flybeyonz@gmail.com</span>
             </div>
 
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 font-body">
               <Phone size={14} />
               <span>+94 77 123 4567</span>
             </div>
 
-            <button className="flex items-center gap-1">
+            <button className="flex items-center gap-1 font-body ">
               EN
               <ChevronDown size={14} />
             </button>
@@ -98,7 +98,7 @@ export default function Navbar() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className={`uppercase text-sm font-semibold tracking-wide transition-colors duration-300 hover:text-[#D8A31A] ${
+                  className={`uppercase font-body text-sm font-semibold tracking-wide transition-colors duration-300 hover:text-[#D8A31A] ${
                     scrolled ? "text-black" : "text-white"
                   }`}
                 >

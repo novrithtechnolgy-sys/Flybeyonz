@@ -38,10 +38,10 @@ export default function DestinationSection({
         <div className="text-center mb-8 md:mb-16">
           <h2 className="font-heading text-[28px] lg:text-[38px] font-semibold italic text-gray-800">
             Explore Sri Lanka's
-          </h2>
-
-          <h2 className="font-heading text-[28px] lg:text-[38px] font-bold italic mt-2 text-gray-800">
+            <br />
+            <span className="font-bold">
             Most Extraordinary Places
+            </span>
           </h2>
         </div>
       </Container>
@@ -98,8 +98,8 @@ export default function DestinationSection({
 
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />
 
-                <div className="absolute bottom-0 left-0 p-8 text-white">
-                  <h3 className="font-heading text-[22px] uppercase font-semibold mb-4">
+                <div className="absolute bottom-0 left-0 p-4 md:p-8 text-white">
+                  <h3 className="font-heading text-[22px] uppercase font-semibold mb-2 md:mb-4">
                     {item.title}
                   </h3>
 
@@ -111,7 +111,7 @@ export default function DestinationSection({
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="md:hidden flex justify-center gap-2 mt-6">
+        <div className="md:hidden flex justify-center gap-2 mt-8">
           {destinations.map((_, index) => (
             <button
               key={index}

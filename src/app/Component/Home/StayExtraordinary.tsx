@@ -53,7 +53,7 @@ export default function StayExtraordinary({
           {categories.map((item) => (
             <div
               key={item._id}
-              className="relative h-[200px] md:h-auto md:aspect-[5/9] overflow-hidden group"
+              className="relative h-[160px] md:h-auto md:aspect-[5/9] overflow-hidden group"
             >
               <Image
                 src={urlFor(item.image).width(1000).url()}

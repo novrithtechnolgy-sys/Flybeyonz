@@ -36,10 +36,10 @@ export default function WhyChooseUs({ cards }: Props) {
         <div className="text-center mb-8 md:mb-16">
           <h2 className="font-heading text-[28px] lg:text-[38px] font-bold italic text-gray-800">
             Why Discerning Travelers
-          </h2>
-
-          <h2 className="font-heading text-[28px] lg:text-[38px] font-medium italic mt-2 text-gray-800">
+            <br />
+            <span className="font-bold">
             Choose Flybeyonz
+            </span>
           </h2>
         </div>
 
@@ -159,8 +159,8 @@ export default function WhyChooseUs({ cards }: Props) {
 
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
 
-                <div className="absolute bottom-0 left-0 p-5 md:p-8 text-white">
-                  <h3 className="font-heading text-[18px] md:text-[22px] font-semibold uppercase mb-4 ">
+                <div className="absolute bottom-0 left-0 p-4 md:p-8 text-white">
+                  <h3 className="font-heading text-[18px] md:text-[22px] font-semibold uppercase mb-2 md:mb-4 ">
                     {card.title}
                   </h3>
 
@@ -172,7 +172,7 @@ export default function WhyChooseUs({ cards }: Props) {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="md:hidden flex justify-center gap-2 mt-6">
+        <div className="md:hidden flex justify-center gap-2 mt-8">
           {cards.map((_, index) => (
             <button
               key={index}

@@ -87,7 +87,7 @@ export default function ExperiencesSection({
             >
               {experiences.map((item) => (
                 <SwiperSlide key={item._id}>
-                  <div className="relative h-[400px] overflow-hidden">
+                  <div className="relative h-[360px] overflow-hidden">
                     <Image
                       src={urlFor(item.image).width(1200).url()}
                       alt={item.title}
@@ -97,12 +97,12 @@ export default function ExperiencesSection({
 
                     <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
 
-                    <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                      <h3 className="text-xl font-semibold uppercase mb-4">
+                    <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+                      <h3 className="text-[18px] font-semibold uppercase mb-2">
                         {item.title}
                       </h3>
 
-                      <p className="text-sm leading-7 text-white/90">
+                      <p className="text-[12px] leading-6 text-white/90">
                         {item.description}
                       </p>
                     </div>
@@ -110,7 +110,7 @@ export default function ExperiencesSection({
                 </SwiperSlide>
               ))}
             </Swiper>
-            <div className="md:hidden flex justify-center gap-2 mt-6">
+            <div className="md:hidden flex justify-center gap-2 mt-8">
               {experiences.map((_, index) => (
                 <button
                   key={index}

@@ -32,7 +32,7 @@ export default function Button({
 
   const sizes = {
     sm: "px-5 py-2 text-[12px] md:text-[16px]",
-    md: "px-7 py-2 md:py-3 text-[12px] md:text-[16px]",
+    md: "px-7 py-2 md:py-3 text-[14px] md:text-[16px]",
     lg: "px-10 py-4 text-[18px] md:text-[20px]",
   };
 
