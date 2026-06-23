@@ -24,11 +24,11 @@ export default function HeroSection() {
       {/* Hero Content */}
       <div className="relative z-10 flex h-full items-center lg:items-end lg:pb-20 justify-center">
         <div className="text-center max-w-5xl px-6">
-          <h1 className="text-white font-heading text-[42px] mt-10 md:mt-0 md:text-6xl lg:text-[52px] font-semibold italic leading-tight">
+          <h1 className="text-white font-heading text-[32px] mt-10 md:mt-0 md:text-6xl lg:text-[52px] font-semibold italic leading-tight">
             Beyond Travel, Beyond Expectations
           </h1>
 
-          <p className="mt-4 md:mt-8 font-body text-white/90 text-[16px] md:text-[18px] max-w-4xl mx-auto">
+          <p className="mt-4 md:mt-8 font-body text-white/90 text-[14px] md:text-[18px] max-w-4xl mx-auto">
             Discover Sri Lanka through tailor-made luxury journeys crafted
             around your passions, preferences, and sense of adventure.
           </p>
