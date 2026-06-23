@@ -23,7 +23,7 @@ export default function StayExtraordinary({
         <div className="grid lg:grid-cols-12 gap-4 md:gap-8 items-center mb-8 md:mb-16">
           {/* Left */}
           <div className="lg:col-span-4">
-            <h2 className="font-heading text-[28px] lg:text-[38px] text-center md:text-left font-semibold italic text-gray-900 leading-tight">
+            <h2 className="font-heading text-[26px] lg:text-[38px] text-center md:text-left font-semibold italic text-gray-900 leading-tight">
               Stay Somewhere
               <br />
               <span className="font-bold">
@@ -34,7 +34,7 @@ export default function StayExtraordinary({
 
           {/* Center */}
           <div className="lg:col-span-5 text-center md:text-left">
-            <p className="font-body text-[16px] md:text-[18px] md:leading-10 text-gray-700">
+            <p className="font-body text-[14px] md:text-[18px] md:leading-10 text-gray-700">
               Experience exceptional stays at handpicked
               luxury properties across Sri Lanka.
             </p>
@@ -65,7 +65,7 @@ export default function StayExtraordinary({
               <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition" />
 
               <div className="absolute inset-0 flex items-center justify-center p-6">
-                <h3 className="font-heading text-center text-white text-[22px] font-semibold uppercase leading-relaxed">
+                <h3 className="font-heading text-center text-white text-[18px] md:text-[22px] font-semibold uppercase leading-relaxed">
                   {item.title}
                 </h3>
               </div>

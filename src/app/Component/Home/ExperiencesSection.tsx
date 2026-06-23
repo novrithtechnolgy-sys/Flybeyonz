@@ -34,7 +34,7 @@ export default function ExperiencesSection({
       <Container>
         {/* Title */}
         <div className="text-center mb-8 md:mb-16">
-          <h2 className="font-heading text-[28px] lg:text-[38px] font-semibold italic text-gray-800">
+          <h2 className="font-heading text-[26px] lg:text-[38px] font-semibold italic text-gray-800">
             For Travelers Who
           <br/>
           <span className="font-bold">
@@ -98,11 +98,11 @@ export default function ExperiencesSection({
                     <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
 
                     <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
-                      <h3 className="text-[18px] font-semibold uppercase mb-2">
+                      <h3 className="font-heading text-[18px] font-semibold uppercase mb-2">
                         {item.title}
                       </h3>
 
-                      <p className="text-[12px] leading-6 text-white/90">
+                      <p className="font-body text-[12px] leading-6 text-white/90">
                         {item.description}
                       </p>
                     </div>

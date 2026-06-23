@@ -36,7 +36,7 @@ export default function DestinationSection({
       <Container>
         {/* Title */}
         <div className="text-center mb-8 md:mb-16">
-          <h2 className="font-heading text-[28px] lg:text-[38px] font-semibold italic text-gray-800">
+          <h2 className="font-heading text-[26px] lg:text-[38px] font-semibold italic text-gray-800">
             Explore Sri Lanka's
             <br />
             <span className="font-bold">
@@ -99,11 +99,11 @@ export default function DestinationSection({
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />
 
                 <div className="absolute bottom-0 left-0 p-4 md:p-8 text-white">
-                  <h3 className="font-heading text-[22px] uppercase font-semibold mb-2 md:mb-4">
+                  <h3 className="font-heading text-[18px] md:text-[22px] uppercase font-semibold mb-2 md:mb-4">
                     {item.title}
                   </h3>
 
-                  <p className="font-body text-[14px] text-white/90 max-w-md">
+                  <p className="font-body text-[12px] md:text-[14px] text-white/90 max-w-md">
                     {item.description}
                   </p>
                 </div>
