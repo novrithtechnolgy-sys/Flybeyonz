@@ -132,7 +132,7 @@ export default function FeaturedTours({
                             {tour.title}
                           </h3>
 
-                          <p className="mt-4 font-body text-[14px] text-white/90 leading-relaxed">
+                          <p className="mt-4 font-body text-[14px] text-white/90 leading-relaxed font-light">
                             {tour.shortDescription}
                           </p>
 
@@ -177,7 +177,7 @@ export default function FeaturedTours({
             >
               {tours.map((card, index) => (
                 <SwiperSlide key={card._id}
-                  className={index === 0 ? "pl-[16px]" : index === tours.length - 1 ? "pr-[16px]" : ""}>
+                  className={index === 0 ? "pl-[20px]" : index === tours.length - 1 ? "pr-[20px]" : ""}>
                     <div className="relative h-[380px] md:h-[520px] overflow-hidden group">
                       <Image
                         src={urlFor(card.image).width(1000).url()}

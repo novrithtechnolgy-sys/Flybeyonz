@@ -49,8 +49,8 @@ export default function CEOSection() {
             </div>
 
             <div className="mt-8">
-              <h3 className="text-[28px] font-semibold text-black">
-                Ozan Boran
+              <h3 className="text-[22px] font-semibold text-black">
+                Ms. Samitha Perera
               </h3>
 
               <p className="mt-2 text-[18px] text-gray-600">
