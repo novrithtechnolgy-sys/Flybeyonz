@@ -203,7 +203,7 @@ export default function Footer() {
                     behavior: "smooth",
                   })
                 }
-                className="hidden md:block h-8 w-8 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-black transition"
+                className="hidden md:flex h-8 w-8 rounded-full border border-white items-center justify-center hover:bg-white hover:text-black transition"
               >
                 <ChevronUp size={18} />
               </button>

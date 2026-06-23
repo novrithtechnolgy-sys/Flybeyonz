@@ -91,7 +91,7 @@ export default function Testimonials({
           >
             {testimonials.map((item) => (
               <SwiperSlide key={item._id}>
-                <div className="bg-[#EDEDED] p-4 md:p-8 min-h-[250px] md:min-h-[380px]">
+                <div className="bg-[#EDEDED] px-4 py-6 md:p-8  min-h-[260px] md:min-h-[380px]">
                   {/* Stars */}
                   <div className="flex gap-1 mb-4 md:mb-6">
                     {[...Array(item.rating)].map((_, i) => (
