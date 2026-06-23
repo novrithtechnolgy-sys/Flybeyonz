@@ -6,7 +6,7 @@ export default function AboutIntro() {
     <section className="bg-white py-10 lg:py-20">
       <Container>
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-heading text-[28px] lg:text-[38px] font-semibold italic text-black">
+          <h2 className="font-heading text-[26px] lg:text-[38px] font-semibold italic text-black">
             The Art of 
             <br />
             <span className="font-bold">
@@ -14,14 +14,14 @@ export default function AboutIntro() {
             </span>
           </h2>
 
-          <p className="mt-4 md:mt-8 font-body text-[16px] lg:text-[18px] leading-relaxed text-[#333] font-body max-w-3xl mx-auto">
+          <p className="mt-4 md:mt-8 font-body text-[14px] lg:text-[18px] leading-relaxed text-[#333] font-body max-w-3xl mx-auto">
             Sri Lanka is more than a destination – it's a collection of
             extraordinary experiences. From panoramic mountain views and
             ancient kingdoms to incredible wildlife and luxury retreats,
             every journey reveals something unforgettable.
           </p>
 
-          <p className="mt-4 md:mt-8 font-body text-[16px] lg:text-[18px] leading-relaxed text-[#333] font-body max-w-3xl mx-auto">
+          <p className="mt-4 md:mt-8 font-body text-[14px] lg:text-[18px] leading-relaxed text-[#333] font-body max-w-3xl mx-auto">
             At Flybeyonz, we craft personalized travel experiences that
             blend luxury, authenticity, and exceptional service. Whether
             you seek adventure, relaxation, romance, or cultural discovery,
