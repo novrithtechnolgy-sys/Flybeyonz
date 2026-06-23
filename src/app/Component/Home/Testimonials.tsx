@@ -104,7 +104,7 @@ export default function Testimonials({
                   </div>
 
                   {/* Review */}
-                  <p className="font-body text-gray-700 text-[12px] md:text-[14px] leading-6 md:leading-10">
+                  <p className="font-body text-gray-700 text-[14px] md:text-[14px] leading-6 md:leading-10">
                     "{item.review}"
                   </p>
 

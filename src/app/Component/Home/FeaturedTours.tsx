@@ -191,10 +191,10 @@ export default function FeaturedTours({
                           <h3 className="mt-4 font-heading text-[18px] text-white/90 leading-relaxed">
                             {card.title}
                           </h3>
-                          <p className="mt-2 font-body text-[12px] text-white/90 leading-relaxed">
+                          <p className="mt-2 font-body text-[14px] text-white/90 leading-relaxed">
                             {card.shortDescription}
                           </p>
-                          <p className="mt-2 font-body text-[12px] font-semibold">
+                          <p className="mt-2 font-body text-[14px] font-semibold">
                             {card.duration}
                           </p>
                           </div>

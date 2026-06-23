@@ -102,7 +102,7 @@ export default function ExperiencesSection({
                         {item.title}
                       </h3>
 
-                      <p className="font-body text-[12px] leading-6 text-white/90">
+                      <p className="font-body text-[14px] leading-6 text-white/90">
                         {item.description}
                       </p>
                     </div>

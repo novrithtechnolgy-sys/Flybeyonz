@@ -103,7 +103,7 @@ export default function DestinationSection({
                     {item.title}
                   </h3>
 
-                  <p className="font-body text-[12px] md:text-[14px] text-white/90 max-w-md">
+                  <p className="font-body text-[14px] md:text-[14px] text-white/90 max-w-md">
                     {item.description}
                   </p>
                 </div>

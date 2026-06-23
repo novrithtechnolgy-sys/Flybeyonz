@@ -164,7 +164,7 @@ export default function WhyChooseUs({ cards }: Props) {
                     {card.title}
                   </h3>
 
-                  <p className="font-body text-[12px] md:text-[16px] leading-6 text-white/90">
+                  <p className="font-body text-[14px] md:text-[16px] leading-6 text-white/90">
                     {card.description}
                   </p>
                 </div>
