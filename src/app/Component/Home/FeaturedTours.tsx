@@ -51,7 +51,7 @@ export default function FeaturedTours({
         <div className="grid lg:grid-cols-12 gap-10 items-center">
           {/* Left Content */}
           <div className="lg:col-span-4 text-white">
-            <h2 className="font-heading text-[28px] lg:text-[38px] italic font-semibold leading-tight">
+            <h2 className="font-heading text-[26px] lg:text-[38px] italic font-semibold leading-tight">
               Signature
               <br />
               <span className="font-bold ">
@@ -59,7 +59,7 @@ export default function FeaturedTours({
               </span>
             </h2>
 
-            <p className="mt-4 md:mt-8 font-body text-[16px] md:text-[18px] text-white/90 leading-relaxed">
+            <p className="mt-4 md:mt-8 font-body text-[14px] md:text-[18px] text-white/90 leading-relaxed">
               Browse our carefully crafted tour packages
               and discover the very best of Sri Lanka.
             </p>
@@ -188,13 +188,13 @@ export default function FeaturedTours({
 
                       <div className="absolute -bottom-1 inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
                           <div className="absolute bottom-0 left-0 p-4 md:p-8 text-white">
-                          <h3 className="mt-4 font-heading text-[20px] text-white/90 leading-relaxed">
+                          <h3 className="mt-4 font-heading text-[18px] text-white/90 leading-relaxed">
                             {card.title}
                           </h3>
                           <p className="mt-2 font-body text-[12px] text-white/90 leading-relaxed">
                             {card.shortDescription}
                           </p>
-                          <p className="mt-2 font-body text-[14px] font-semibold">
+                          <p className="mt-2 font-body text-[12px] font-semibold">
                             {card.duration}
                           </p>
                           </div>

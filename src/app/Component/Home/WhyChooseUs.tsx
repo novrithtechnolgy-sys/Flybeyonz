@@ -160,7 +160,7 @@ export default function WhyChooseUs({ cards }: Props) {
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
 
                 <div className="absolute bottom-0 left-0 p-4 md:p-8 text-white">
-                  <h3 className="font-heading text-[16px] md:text-[22px] font-semibold uppercase mb-2 md:mb-4 ">
+                  <h3 className="font-heading text-[18px] md:text-[22px] font-semibold uppercase mb-2 md:mb-4 ">
                     {card.title}
                   </h3>
 
