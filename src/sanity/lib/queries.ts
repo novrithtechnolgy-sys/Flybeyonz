@@ -67,3 +67,14 @@ export const testimonialsQuery = `
   photo
 }
 `;
+
+export const whyFlybeyonzCardsQuery = `
+*[_type == "whyFlybeyonzCard"]
+| order(order asc)
+{
+  _id,
+  title,
+  description,
+  image
+}
+`;

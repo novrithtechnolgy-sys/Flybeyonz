@@ -30,7 +30,7 @@ export default function Footer() {
 
       <Container className="relative z-10">
         <div className="pt-10 md:pt-20">
-          <div className="grid lg:grid-cols-12 gap-8 md:gap-12 font-body text-[14px] md:text-[16px]">
+          <div className="grid md:grid-cols-2 lg:grid-cols-12 gap-8 md:gap-12 font-body text-[14px] md:text-[16px]">
             {/* Company Info */}
             <div className="lg:col-span-5">
               <Image

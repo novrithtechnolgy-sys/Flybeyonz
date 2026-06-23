@@ -23,7 +23,7 @@ export default function StayExtraordinary({
         <div className="grid lg:grid-cols-12 gap-4 md:gap-8 items-center mb-8 md:mb-16">
           {/* Left */}
           <div className="lg:col-span-4">
-            <h2 className="font-heading text-[26px] lg:text-[38px] text-center md:text-left font-semibold italic text-gray-900 leading-tight">
+            <h2 className="font-heading text-[26px] md:text-[38px] text-center lg:text-left font-semibold italic text-gray-900 leading-tight">
               Stay Somewhere
               <br />
               <span className="font-bold">
@@ -33,7 +33,7 @@ export default function StayExtraordinary({
           </div>
 
           {/* Center */}
-          <div className="lg:col-span-5 text-center md:text-left">
+          <div className="lg:col-span-5 text-center lg:text-left">
             <p className="font-body text-[14px] md:text-[18px] md:leading-10 text-gray-700">
               Experience exceptional stays at handpicked
               luxury properties across Sri Lanka.
@@ -41,7 +41,7 @@ export default function StayExtraordinary({
           </div>
 
           {/* Right */}
-          <div className="hidden md:block lg:col-span-3 flex lg:justify-end">
+          <div className="hidden lg:block lg:col-span-3 flex lg:justify-end">
             <Button href="/accommodation" variant="primary">
               Discover All
             </Button>
@@ -49,11 +49,11 @@ export default function StayExtraordinary({
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-5 gap-4">
           {categories.map((item) => (
             <div
               key={item._id}
-              className="relative h-[160px] md:h-auto md:aspect-[5/9] overflow-hidden group"
+              className="relative h-[160px] md:h-[240px] lg:h-full lg:aspect-[5/9] overflow-hidden group"
             >
               <Image
                 src={urlFor(item.image).width(1000).url()}
@@ -72,7 +72,7 @@ export default function StayExtraordinary({
             </div>
           ))}
         </div>
-        <div className="md:hidden flex justify-center mt-8">
+        <div className="lg:hidden flex justify-center mt-8">
             <Button href="/accommodation" variant="primary">
               Discover All
             </Button>

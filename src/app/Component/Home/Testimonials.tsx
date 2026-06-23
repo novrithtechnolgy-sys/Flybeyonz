@@ -39,7 +39,7 @@ export default function Testimonials({
       <Container>
         {/* Title */}
         <div className="text-center mb-8 md:mb-16">
-          <h2 className="font-heading text-[26px] lg:text-[38px] italic text-gray-800">
+          <h2 className="font-heading text-[26px] md:text-[38px] italic text-gray-800">
             Trusted by
             <br />
             <span className="font-bold">
@@ -50,15 +50,15 @@ export default function Testimonials({
 
         <div className="relative">
           {/* Prev */}
-          <button className="hidden testimonial-prev absolute left-0 top-1/2 -translate-y-1/2 z-20 flex h-12 w-12 items-center justify-center rounded-full bg-gray-500 text-white">
+          <button className="hidden lg:flex testimonial-prev absolute left-0 top-1/2 -translate-y-1/2 z-20 flex h-12 w-12 items-center justify-center rounded-full bg-gray-500 text-white">
             <ChevronLeft />
           </button>
 
           {/* Next */}
-          <button className="hidden testimonial-next absolute right-0 top-1/2 -translate-y-1/2 z-20 flex h-12 w-12 items-center justify-center rounded-full bg-gray-500 text-white">
+          <button className="hidden lg:flex testimonial-next absolute right-0 top-1/2 -translate-y-1/2 z-20 flex h-12 w-12 items-center justify-center rounded-full bg-gray-500 text-white">
             <ChevronRight />
           </button>
-        <div className="relative md:px-16">
+        <div className="relative lg:px-16">
           <Swiper
             modules={[Navigation, Autoplay]}
             navigation={{

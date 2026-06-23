@@ -51,7 +51,7 @@ export default function FeaturedTours({
         <div className="grid lg:grid-cols-12 gap-10 items-center">
           {/* Left Content */}
           <div className="lg:col-span-4 text-white">
-            <h2 className="font-heading text-[26px] lg:text-[38px] italic font-semibold leading-tight">
+            <h2 className="font-heading text-[26px] md:text-[38px] italic font-semibold leading-tight">
               Signature
               <br />
               <span className="font-bold ">

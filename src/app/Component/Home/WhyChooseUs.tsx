@@ -34,7 +34,7 @@ export default function WhyChooseUs({ cards }: Props) {
       <Container>
         {/* Title */}
         <div className="text-center mb-8 md:mb-16">
-          <h2 className="font-heading text-[26px] lg:text-[38px] font-bold italic text-gray-800">
+          <h2 className="font-heading text-[26px] md:text-[38px] font-bold italic text-gray-800">
             Why Discerning Travelers
             <br />
             <span className="font-bold">
@@ -43,7 +43,7 @@ export default function WhyChooseUs({ cards }: Props) {
           </h2>
         </div>
 
-        <div className="hidden md:block relative">
+        <div className="hidden lg:block relative">
           {/* Previous Button */}
           <button className="why-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 flex h-12 w-12 items-center justify-center rounded-full border border-white/70 bg-black/20 text-white backdrop-blur-sm transition hover:bg-black/40">
             <ChevronLeft size={22} />
@@ -112,7 +112,7 @@ export default function WhyChooseUs({ cards }: Props) {
           </Swiper>
         </div>
       </Container>
-       <div className="md:hidden relative">
+       <div className="lg:hidden relative">
           <Swiper
           modules={[Navigation]}
           // navigation={{

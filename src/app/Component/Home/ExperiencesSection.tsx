@@ -34,7 +34,7 @@ export default function ExperiencesSection({
       <Container>
         {/* Title */}
         <div className="text-center mb-8 md:mb-16">
-          <h2 className="font-heading text-[26px] lg:text-[38px] font-semibold italic text-gray-800">
+          <h2 className="font-heading text-[26px] md:text-[38px] font-semibold italic text-gray-800">
             For Travelers Who
           <br/>
           <span className="font-bold">
