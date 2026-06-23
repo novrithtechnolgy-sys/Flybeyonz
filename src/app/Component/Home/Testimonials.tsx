@@ -39,12 +39,12 @@ export default function Testimonials({
       <Container>
         {/* Title */}
         <div className="text-center mb-8 md:mb-16">
-          <h2 className="font-heading text-[28px] lg:text-[38px] italic text-gray-800">
+          <h2 className="font-heading text-[26px] lg:text-[38px] italic text-gray-800">
             Trusted by
-          </h2>
-
-          <h2 className="font-heading text-[28px] lg:text-[38px] font-bold italic mt-2 text-gray-800">
+            <br />
+            <span className="font-bold">
             Travelers Worldwide
+            </span>
           </h2>
         </div>
 
@@ -91,7 +91,7 @@ export default function Testimonials({
           >
             {testimonials.map((item) => (
               <SwiperSlide key={item._id}>
-                <div className="bg-[#EDEDED] px-4 py-6 md:p-8  min-h-[260px] md:min-h-[380px]">
+                <div className="bg-[#EDEDED] px-4 py-6 md:p-8  min-h-[240px] md:min-h-[380px]">
                   {/* Stars */}
                   <div className="flex gap-1 mb-4 md:mb-6">
                     {[...Array(item.rating)].map((_, i) => (
@@ -104,7 +104,7 @@ export default function Testimonials({
                   </div>
 
                   {/* Review */}
-                  <p className="font-body text-gray-700 text-[14px] leading-6 md:leading-10">
+                  <p className="font-body text-gray-700 text-[12px] md:text-[14px] leading-6 md:leading-10">
                     "{item.review}"
                   </p>
 
@@ -119,7 +119,7 @@ export default function Testimonials({
                     />
 
                     <div>
-                      <h4 className="font-body font-semibold text-[#2B2E83] text-[16px] md:text-[18px]">
+                      <h4 className="font-body font-semibold text-[#2B2E83] text-[14px] md:text-[18px]">
                         {item.name}
                       </h4>
 
