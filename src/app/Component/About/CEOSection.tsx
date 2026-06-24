@@ -27,13 +27,13 @@ export default function CEOSection() {
             </h2>
 
             <div className="mt-8 space-y-4">
-              <p className="font-body text-[18px]  text-gray-700">
+              <p className="font-body text-[18px]  text-gray-700 font-light">
                 "Flybeyonz was founded with a passion for sharing the beauty,
                 culture, and hospitality of Sri Lanka with travelers from
                 around the world.
               </p>
 
-              <p className="font-body text-[18px] text-gray-700">
+              <p className="font-body text-[18px] text-gray-700 font-light">
                 Our mission is simple: to create meaningful journeys that
                 combine luxury, authenticity, and unforgettable experiences.
                 Every traveler is unique, and we take pride in designing
@@ -41,7 +41,7 @@ export default function CEOSection() {
                 expectations.
               </p>
 
-              <p className="font-body text-[18px] text-gray-700">
+              <p className="font-body text-[18px] text-gray-700 font-light">
                 Thank you for considering Flybeyonz as your travel partner. We
                 look forward to welcoming you to Sri Lanka and creating memories
                 that will last a lifetime."
@@ -49,15 +49,15 @@ export default function CEOSection() {
             </div>
 
             <div className="mt-8">
-              <h3 className="text-[22px] font-semibold text-black">
+              <h3 className="text-[22px] font-semibold text-black font-body">
                 Ms. Samitha Perera
               </h3>
 
-              <p className="mt-2 text-[18px] text-gray-600">
+              <p className="mt-2 text-[18px] text-gray-600 font-body font-light">
                 Founder & Chief Executive Officer
               </p>
 
-              <p className="mt-1 text-[18px] text-gray-600">
+              <p className="mt-1 text-[18px] text-gray-600 font-body font-light">
                 Flybeyonz Travels & Tours
               </p>
             </div>

@@ -42,7 +42,7 @@ export default function WhyFlybeyonz({
           </div>
 
           <div className="flex items-center">
-            <p className="text-white/90 text-[14px] md:text-[18px] md:leading-9">
+            <p className="text-white/90 text-[14px] md:text-[18px] md:leading-9 font-light">
               Discover the exceptional service,
               personalized experiences, and attention
               to detail that set Flybeyonz apart.
@@ -69,7 +69,7 @@ export default function WhyFlybeyonz({
                   className="object-cover"
                 />
 
-                <div className="absolute inset-0 bg-black/60" />
+                <div className="absolute inset-0 bg-black/20" />
               </div>
 
               {/* Default Background */}

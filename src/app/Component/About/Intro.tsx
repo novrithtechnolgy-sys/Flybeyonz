@@ -14,13 +14,13 @@ export default function Intro() {
             </span>
           </h2>
 
-          <p className="mt-4 md:mt-8 font-body text-[14px] lg:text-[18px] leading-relaxed text-[#333] font-body max-w-3xl mx-auto">
+          <p className="mt-4 md:mt-8 font-body text-[14px] lg:text-[18px] leading-relaxed text-[#333] font-light max-w-3xl mx-auto">
             Flybeyonz is a luxury travel company dedicated to creating exceptional experiences across Sri Lanka. 
             From pristine beaches and scenic hill country landscapes to ancient heritage sites and unforgettable wildlife encounters, 
             we design journeys that showcase the very best of the island.
           </p>
 
-          <p className="mt-4 md:mt-8 font-body text-[14px] lg:text-[18px] leading-relaxed text-[#333] font-body max-w-3xl mx-auto">
+          <p className="mt-4 md:mt-8 font-body text-[14px] lg:text-[18px] leading-relaxed text-[#333] font-light max-w-3xl mx-auto">
             Every itinerary is thoughtfully tailored to your interests, ensuring a seamless blend of luxury, authenticity, and personalized service. 
             Whether you're planning a honeymoon, family vacation, cultural escape, or adventure-filled getaway, we transform travel into unforgettable memories.
           </p>
