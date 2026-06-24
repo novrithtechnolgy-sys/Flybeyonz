@@ -89,7 +89,7 @@ export default function WhyFlybeyonz({
                     {card.title}
                   </h3>
 
-                  <p className="text-white/85 font-body text-[14px] md:leading-6">
+                  <p className="text-white/85 font-body text-[14px] md:text-[16px] md:leading-6 font-light">
                     {card.description}
                   </p>
                 </div>
