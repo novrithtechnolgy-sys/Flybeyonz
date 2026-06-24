@@ -39,7 +39,7 @@ export default function TourGrid({
                 )}
           </h2>
 
-          <p className="mt-6 text-lg leading-9 text-gray-600">
+          <p className="mt-8 font-body text-[18px] leading-relaxed font-light text-gray-600">
             {category.description}
           </p>
         </div>
@@ -74,7 +74,7 @@ export default function TourGrid({
                 </h3>
                 
                 <div className="overflow-hidden max-h-0 opacity-0 transition-all duration-800 group-hover:max-h-40 group-hover:opacity-100">
-                <p className="text-white/90 mb-6 leading-8">
+                <p className="text-white/90 mb-6 font-light font-body text-[14px] leading-6">
                   {tour.shortDescription}
                 </p>
                </div>
