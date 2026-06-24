@@ -91,7 +91,7 @@ export default function Testimonials({
           >
             {testimonials.map((item) => (
               <SwiperSlide key={item._id}>
-                <div className="bg-[#EDEDED] px-4 py-6 md:p-8  min-h-[240px] md:min-h-[380px]">
+                <div className="bg-[#EDEDED] px-4 py-6 md:p-8  min-h-[240px] md:min-h-[330px]">
                   {/* Stars */}
                   <div className="flex gap-1 mb-4 md:mb-6">
                     {[...Array(item.rating)].map((_, i) => (
@@ -104,7 +104,7 @@ export default function Testimonials({
                   </div>
 
                   {/* Review */}
-                  <p className="font-body text-gray-700 text-[14px] md:text-[14px] leading-6 md:leading-10">
+                  <p className="font-body text-gray-700 text-[14px] md:text-[14px] leading-6 md:leading-8 font-light">
                     "{item.review}"
                   </p>
 
@@ -119,7 +119,7 @@ export default function Testimonials({
                     />
 
                     <div>
-                      <h4 className="font-body font-semibold text-[#2B2E83] text-[14px] md:text-[18px]">
+                      <h4 className="font-body font-semibold text-[#2B2E83] text-[14px] md:text-[14px]">
                         {item.name}
                       </h4>
 

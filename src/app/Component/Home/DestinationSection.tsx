@@ -32,7 +32,7 @@ export default function DestinationSection({
     const [activeIndex, setActiveIndex] = useState(0);
     const swiperRef = useRef<SwiperType | null>(null);
   return (
-    <section className="bg-white py-10 md:py-20">
+    <section className="bg-white py-10 md:pt-20">
       <Container>
         {/* Title */}
         <div className="text-center mb-8 md:mb-16">
@@ -48,12 +48,12 @@ export default function DestinationSection({
 
       <div className="relative">
         {/* Prev */}
-        <button className="hidden destination-prev absolute left-4 top-1/2 -translate-y-1/2 z-20 flex h-14 w-14 items-center justify-center rounded-full border border-white/70 bg-black/20 backdrop-blur-sm text-white">
+        <button className="hidden lg:flex destination-prev absolute left-4 top-1/2 -translate-y-1/2 z-20 flex h-14 w-14 items-center justify-center rounded-full border border-white/70 bg-black/20 backdrop-blur-sm text-white">
           <ChevronLeft size={24} />
         </button>
 
         {/* Next */}
-        <button className="hidden destination-next absolute right-4 top-1/2 -translate-y-1/2 z-20 flex h-14 w-14 items-center justify-center rounded-full border border-white/70 bg-black/20 backdrop-blur-sm text-white">
+        <button className="hidden lg:flex destination-next absolute right-4 top-1/2 -translate-y-1/2 z-20 flex h-14 w-14 items-center justify-center rounded-full border border-white/70 bg-black/20 backdrop-blur-sm text-white">
           <ChevronRight size={24} />
         </button>
 
@@ -103,7 +103,7 @@ export default function DestinationSection({
                     {item.title}
                   </h3>
 
-                  <p className="font-body text-[14px] md:text-[14px] text-white/90 max-w-md">
+                  <p className="font-body text-[14px] md:text-[14px] text-white/90 max-w-md font-light">
                     {item.description}
                   </p>
                 </div>

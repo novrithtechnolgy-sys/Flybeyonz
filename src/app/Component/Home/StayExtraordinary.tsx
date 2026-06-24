@@ -34,14 +34,14 @@ export default function StayExtraordinary({
 
           {/* Center */}
           <div className="lg:col-span-5 text-center lg:text-left">
-            <p className="font-body text-[14px] md:text-[18px] md:leading-10 text-gray-700">
+            <p className="font-body text-[14px] md:text-[18px] md:leading-10 text-gray-700 font-light">
               Experience exceptional stays at handpicked
               luxury properties across Sri Lanka.
             </p>
           </div>
 
           {/* Right */}
-          <div className="hidden lg:block lg:col-span-3 flex lg:justify-end">
+          <div className="hidden lg:flex lg:col-span-3 lg:justify-end  w-full">
             <Button href="/accommodation" variant="primary">
               Discover All
             </Button>

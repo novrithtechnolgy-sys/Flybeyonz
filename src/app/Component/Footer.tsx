@@ -30,9 +30,9 @@ export default function Footer() {
 
       <Container className="relative z-10">
         <div className="pt-10 md:pt-20">
-          <div className="grid md:grid-cols-2 lg:grid-cols-12 gap-8 md:gap-12 font-body text-[14px] md:text-[16px]">
+          <div className="grid md:grid-cols-2 lg:grid-cols-14 gap-8 md:gap-12 font-body text-[14px] md:text-[16px] font-light">
             {/* Company Info */}
-            <div className="lg:col-span-5">
+            <div className="lg:col-span-7">
               <Image
                 src="https://res.cloudinary.com/dvgodnxlg/image/upload/q_auto/f_auto/v1781681944/7ce989aa3fa9a1217a3c5b293a7ad794f342efb1_e4bppq.png"
                 alt="Flybeyonz"
@@ -100,7 +100,7 @@ export default function Footer() {
                 Quick Links
               </h3>
 
-              <ul className="space-y-2 md:space-y-4">
+              <ul className="space-y-2 md:space-y-4 font-light">
                 <li>
                   <Link href="/">Home</Link>
                 </li>
@@ -137,7 +137,7 @@ export default function Footer() {
                 Our Services
               </h3>
 
-              <ul className="space-y-2 md:space-y-4">
+              <ul className="space-y-2 md:space-y-4 font-body font-light">
                 <li>Hotel & Accommodation</li>
                 <li>Transport Service</li>
                 <li>Custom Tour Packages</li>
@@ -148,12 +148,12 @@ export default function Footer() {
             </div>
 
             {/* Policies */}
-            <div className="lg:col-span-2">
+            <div className="lg:col-span-2 ">
               <h3 className="font-semibold mb-4 md:mb-8">
                 Help & Support
               </h3>
 
-              <ul className="space-y-2 md:space-y-4">
+              <ul className="space-y-2 md:space-y-4 font-light">
                 <li>
                   <Link href="/privacy-policy">
                     Privacy Policy
@@ -182,7 +182,7 @@ export default function Footer() {
           </div>
 
           {/* Bottom Bar */}
-          <div className="mt-8 md:mt-16 border-t border-white/20 pt-6 pb-4 md:pb-8 flex flex-col lg:flex-row justify-between items-center gap-2 md:gap-4 font-body text-[14px] md:text-[16px]">
+          <div className="mt-8 md:mt-14 border-t border-white/20 pt-6 pb-4 md:pb-8 flex flex-col lg:flex-row justify-between items-center gap-2 md:gap-4 font-body text-[14px] md:text-[14px] font-light">
             <p className="text-white/80 text-center md:text-left">
               © 2026 Flybeyonz Travels & Tours.
               All Rights Reserved.

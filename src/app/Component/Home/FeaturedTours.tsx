@@ -48,7 +48,7 @@ export default function FeaturedTours({
       <div className="absolute inset-0 bg-black/75" />
 
       <Container className="relative z-10">
-        <div className="grid lg:grid-cols-12 gap-10 items-center">
+        <div className="grid lg:grid-cols-14 gap-10 items-center">
           {/* Left Content */}
           <div className="lg:col-span-4 text-white">
             <h2 className="font-heading text-[26px] md:text-[38px] italic font-semibold leading-tight">
@@ -59,7 +59,7 @@ export default function FeaturedTours({
               </span>
             </h2>
 
-            <p className="mt-4 md:mt-8 font-body text-[14px] md:text-[18px] text-white/90 leading-relaxed">
+            <p className="mt-4 md:mt-8 font-body text-[14px] md:text-[18px] text-white/90 leading-relaxed font-light">
               Browse our carefully crafted tour packages
               and discover the very best of Sri Lanka.
             </p>
@@ -74,7 +74,7 @@ export default function FeaturedTours({
           </div>
 
           {/* Right Carousel */}
-          <div className="hidden lg:block lg:col-span-8">
+          <div className="hidden lg:block lg:col-span-10">
             <div className="relative">
               {/* Prev */}
               <button className="tour-prev absolute left-3 top-1/2 -translate-y-1/2 z-50 flex h-12 w-12 items-center justify-center rounded-full border border-white/60 bg-white/10 backdrop-blur-sm text-white hover:bg-white/20 transition">
@@ -130,6 +130,15 @@ export default function FeaturedTours({
                         <div className="absolute bottom-0 left-0 p-8 text-white">
                           <h3 className="font-heading text-[22px] font-semibold uppercase leading-tight">
                             {tour.title}
+                            {/* {tour.title.includes(" ") ? (
+                              <>
+                              {tour.title.slice(0, tour.title.indexOf(' '))}
+                              <br />
+                              {tour.title.slice(tour.title.indexOf(' '))}
+                              </>
+                            ) : (
+                              tour.title
+                            )} */}
                           </h3>
 
                           <p className="mt-4 font-body text-[14px] text-white/90 leading-relaxed font-light">

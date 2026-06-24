@@ -27,7 +27,7 @@ export default function Button({
     secondary:
       "bg-[#2B2E83] text-white hover:bg-[#202265]",
     outline:
-      "border-2 border-white text-white hover:bg-white hover:text-black",
+      "ring-inset ring-2 ring-white text-white hover:bg-white hover:text-black",
   };
 
   const sizes = {

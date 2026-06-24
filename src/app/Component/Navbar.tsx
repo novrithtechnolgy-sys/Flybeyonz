@@ -48,10 +48,10 @@ export default function Navbar() {
         <Container>
           {/* Top Bar */}
           <div
-            className={`hidden lg:flex items-center justify-end gap-8 text-sm overflow-hidden transition-all duration-300 ${
+            className={`hidden lg:flex items-center justify-end gap-8 text-sm overflow-hidden transition-all duration-300  ${
               scrolled
                 ? "max-h-0 opacity-0 py-0 border-0"
-                : "max-h-20 opacity-100 py-4 border-b border-white/20"
+                : "max-h-20 opacity-100 py-4 border-b border-white/20 pt-8"
             }`}
           >
             <div className="flex items-center gap-2 font-body">

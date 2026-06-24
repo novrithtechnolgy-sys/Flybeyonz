@@ -30,11 +30,11 @@ export default function WhyChooseUs({ cards }: Props) {
   const [activeIndex, setActiveIndex] = useState(0);
   const swiperRef = useRef<SwiperType | null>(null);
   return (
-    <section className="bg-white py-10 md:py-20">
+    <section className="bg-white py-10 md:py-10 md:pb-20">
       <Container>
         {/* Title */}
         <div className="text-center mb-8 md:mb-16">
-          <h2 className="font-heading text-[26px] md:text-[38px] font-bold italic text-gray-800">
+          <h2 className="font-heading text-[26px] md:text-[38px] font-semibold italic text-gray-800">
             Why Discerning Travelers
             <br />
             <span className="font-bold">
@@ -99,10 +99,18 @@ export default function WhyChooseUs({ cards }: Props) {
                   {/* Content */}
                   <div className="absolute bottom-0 left-0 p-8 text-white">
                     <h3 className="font-heading text-[22px] font-semibold uppercase mb-4">
-                      {card.title}
+                      {card.title.includes(" ") ? (
+                        <>
+                        {card.title.slice(0, card.title.indexOf(' '))}
+                        <br />
+                        {card.title.slice(card.title.indexOf(' '))}
+                        </>
+                      ) : (
+                        card.title
+                      )}
                     </h3>
 
-                    <p className="font-body text-[14px] leading-relaxed text-white/90">
+                    <p className="font-body text-[14px] leading-relaxed text-white/90 font-light">
                       {card.description}
                     </p>
                   </div>

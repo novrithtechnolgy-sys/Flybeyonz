@@ -28,7 +28,7 @@ export default function HeroSection() {
             Beyond Travel, Beyond Expectations
           </h1>
 
-          <p className="mt-4 md:mt-8 font-body text-white/90 text-[14px] md:text-[18px] max-w-4xl mx-auto">
+          <p className="mt-4 md:mt-8 font-body text-white/90 text-[14px] md:text-[18px] max-w-4xl mx-auto font-normal">
             Discover Sri Lanka through tailor-made luxury journeys crafted
             around your passions, preferences, and sense of adventure.
           </p>
