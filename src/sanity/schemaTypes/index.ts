@@ -6,7 +6,19 @@ import destination from './destination'
 import accommodationCategory from './accommodationCategory'
 import testimonial from './testimonial'
 import whyFlybeyonzCard from './whyFlybeyonz'
+import tourCategory from './tourCategory'
+import tour from './tour'
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [whyChooseUs, tourPackage, experience, destination, accommodationCategory, testimonial, whyFlybeyonzCard],
+  types: [
+    whyChooseUs, 
+    tourPackage, 
+    experience, 
+    destination, 
+    accommodationCategory, 
+    testimonial, 
+    whyFlybeyonzCard,
+    tourCategory,
+    tour
+  ],
 }

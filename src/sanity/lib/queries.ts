@@ -78,3 +78,30 @@ export const whyFlybeyonzCardsQuery = `
   image
 }
 `;
+
+export const categoriesQuery = `
+*[_type == "tourCategory"]
+| order(order asc){
+  title,
+  "slug": slug.current
+}
+`;
+
+export const categoryQuery = `
+*[_type=="tourCategory" && slug.current==$slug][0]{
+  title,
+  description,
+  heroImage
+}
+`;
+
+export const categoryToursQuery = `
+*[_type=="tour" && category->slug.current==$slug]{
+  _id,
+  title,
+  duration,
+  shortDescription,
+  featuredImage,
+  "slug": slug.current
+}
+`; 

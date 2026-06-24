@@ -20,6 +20,7 @@ import Testimonials from "./Component/Home/Testimonials";
 
 
 export default async function Home() {
+
   const [whyChooseUs, featuredTours, experiences, destinations, accommodationCategories, testimonials] = await Promise.all([
     client.fetch(whyChooseUsQuery),
     client.fetch(featuredToursQuery),
@@ -32,7 +33,6 @@ export default async function Home() {
   return (
 
     <>
-      <Navbar />
       <HeroSection />
       <AboutIntro />
       <WhyChooseUs cards={whyChooseUs} />

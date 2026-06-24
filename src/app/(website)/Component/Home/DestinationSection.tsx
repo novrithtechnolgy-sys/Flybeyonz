@@ -48,12 +48,12 @@ export default function DestinationSection({
 
       <div className="relative">
         {/* Prev */}
-        <button className="hidden lg:flex destination-prev absolute left-4 top-1/2 -translate-y-1/2 z-20 flex h-14 w-14 items-center justify-center rounded-full border border-white/70 bg-black/20 backdrop-blur-sm text-white">
+        <button className="flex destination-prev absolute left-4 top-1/2 -translate-y-1/2 z-20 flex h-10 w-10 md:h-14 md:w-14 items-center justify-center rounded-full border border-white/70 bg-black/20 backdrop-blur-sm text-white">
           <ChevronLeft size={24} />
         </button>
 
         {/* Next */}
-        <button className="hidden lg:flex destination-next absolute right-4 top-1/2 -translate-y-1/2 z-20 flex h-14 w-14 items-center justify-center rounded-full border border-white/70 bg-black/20 backdrop-blur-sm text-white">
+        <button className="flex destination-next absolute right-4 top-1/2 -translate-y-1/2 z-20 flex h-10 w-10 md:h-14 md:w-14 items-center justify-center rounded-full border border-white/70 bg-black/20 backdrop-blur-sm text-white">
           <ChevronRight size={24} />
         </button>
 
