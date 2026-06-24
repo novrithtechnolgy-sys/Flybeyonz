@@ -187,7 +187,7 @@ export default function FeaturedTours({
               {tours.map((card, index) => (
                 <SwiperSlide key={card._id}
                   className={index === 0 ? "pl-[20px]" : index === tours.length - 1 ? "pr-[20px]" : ""}>
-                    <div className="relative h-[380px] md:h-[520px] overflow-hidden group">
+                    <div className="relative h-[420px] md:h-[520px] overflow-hidden group">
                       <Image
                         src={urlFor(card.image).width(1000).url()}
                         alt={card.title}
